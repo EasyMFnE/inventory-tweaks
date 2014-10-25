@@ -31,7 +31,7 @@ public class InvTweaksContainerManager/* extends InvTweaksObfuscation*/ {
     private GuiContainer guiContainer;
     private Container container;
     private Map<ContainerSection, List<Slot>> slotRefs = new HashMap<ContainerSection, List<Slot>>();
-    private int clickDelay = 0;
+    private int clickDelay = 75; // Typical cheat detection reacts to 15 clicks/sec (67ms).
 
 
     /**
